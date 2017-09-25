@@ -1,0 +1,19 @@
+body {
+	font-family: 'Open Sans', serif;
+	text-align: center;
+	margin: auto;
+	background-color: #F7F7F7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', serif;
+}
+
+.header-margin {
+	margin-top: 47px;
+}

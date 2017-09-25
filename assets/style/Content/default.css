@@ -1,0 +1,15 @@
+#landing {
+    height: 70vh;
+    width: 100%;
+    border-radius: 0;
+    background-image: none;
+}
+
+#name {
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+i {
+    font-size: 90px;
+}
