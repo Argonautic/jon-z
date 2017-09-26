@@ -22,3 +22,7 @@ h6 {
 .section-margin {
 	margin-top: 30px;
 }
+
+.section-divider {
+	margin-bottom: 40px !important;
+}

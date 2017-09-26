@@ -12,7 +12,7 @@ import '../../../../assets/style/content/technologies.css';
 
 export default class Resume extends Component {
     constructor(props) {
-        super(props)
+        super(props);
 
         this.renderFirstRow = this.renderFirstRow.bind(this);
         this.renderSecondRow = this.renderSecondRow.bind(this);

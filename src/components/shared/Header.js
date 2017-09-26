@@ -32,6 +32,45 @@ export default class Header extends Component {
         }
     }
 
+    addSwiper() {
+        /*let touchstartX = 0;
+        let touchstartY = 0;
+        let touchendX = 0;
+        let touchendY = 0;
+
+        const gesturedZone = document.getElementById('gesturedZone');
+
+        gesturedZone.addEventListener('touchstart', function(event) {
+            touchstartX = event.screenX;
+            touchstartY = event.screenY;
+        }, false);
+
+        gesturedZone.addEventListener('touchend', function(event) {
+            touchendX = event.screenX;
+            touchendY = event.screenY;
+            handleGesture();
+        }, false);
+
+        handleGesture() {
+            const swiped = 'swiped: ';
+            if (touchendX < touchstartX) {
+                alert(swiped + 'left!');
+            }
+            if (touchendX > touchstartX) {
+                alert(swiped + 'right!');
+            }
+            if (touchendY < touchstartY) {
+                alert(swiped + 'down!');
+            }
+            if (touchendY > touchstartY) {
+                alert(swiped + 'left!');
+            }
+            if (touchendY === touchstartY) {
+                alert('tap!');
+            }
+        }*/
+    }
+
     render() {
         return (
             <Menu id="header" borderless widths="8" fixed="top">

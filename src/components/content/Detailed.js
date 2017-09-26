@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Segment } from 'semantic-ui-react';
 
 import Technologies from './Sub/Technologies'
-import Portfolio from './Sub/Portfolio';
+import PortfolioDetailed from './Sub/PortfolioDetailed';
 import Resume from './Sub/Resume';
+import FAQ from './Sub/FAQ';
 import Contact from './Sub/Contact';
 
 import '../../../assets/style/content/detailed.css';
@@ -24,9 +25,10 @@ export default class Detailed extends Component {
                 </Segment.Group>
 
                 <Technologies detailed />
-                <Portfolio />
+                <PortfolioDetailed />
                 <Resume />
-                <Contact />
+                <FAQ />
+                <Contact detailed />
             </div>
         )
     }

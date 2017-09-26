@@ -4,6 +4,7 @@ import Lowball from './Lowball';
 import Brief from './Brief';
 import Default from './Default';
 import Detailed from './Detailed';
+import Gratuitous from './Gratuitous';
 
 export default class App extends Component {
     constructor(props) {
@@ -25,6 +26,7 @@ export default class App extends Component {
                 return <Detailed />;
                 break;
             case 4:
+                return <Gratuitous />;
                 break;
         }
     }

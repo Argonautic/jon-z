@@ -9,8 +9,7 @@ export default class Portfolio extends Component {
     render() {
         return (
             <div className="section-margin">
-                <Divider /><Divider horizontal><h3>Portfolio</h3></Divider>
-                <br/>
+                <Divider /><Divider className="section-divider" horizontal><h3>Portfolio</h3></Divider>
                 <Container>
                     <h3>officialunderblue.com</h3>
                     <Image centered size="big" src={Underblue} href="http://officialunderblue.com" />
