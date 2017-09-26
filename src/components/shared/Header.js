@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
 
-import '../../../assets/style/Shared/header.css';
+import '../../../assets/style/shared/header.css';
 
 export default class Header extends Component {
     constructor(props) {

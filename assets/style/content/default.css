@@ -1,0 +1,11 @@
+#landing {
+    height: 70vh;
+    width: 100%;
+    border-radius: 0;
+    background-image: none;
+}
+
+#name {
+    margin-top: 70px;
+    font-size: 50px;
+}

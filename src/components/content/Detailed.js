@@ -1,53 +1,32 @@
 import React, { Component } from 'react';
-import { Segment, Grid, Icon } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 
-import '../../../assets/style/Content/detailed.css';
+import Technologies from './Sub/Technologies'
+import Portfolio from './Sub/Portfolio';
+import Resume from './Sub/Resume';
+import Contact from './Sub/Contact';
+
+import '../../../assets/style/content/detailed.css';
 
 export default class Detailed extends Component {
     render() {
         return (
             <div className="header-margin">
-                <Segment id="image-landing" inverted padded>
-                    <h1 id="name">Jonathan Zhou</h1>
-                    <h3>Software Engineer & Web Developer</h3>
-                </Segment>
-                <div>
-                    <h1>Web Development</h1>
-                    <Grid padded columns={4}>
-                        <Grid.Row>
-                            <Grid.Column>
-                                <i className="devicon-django-plain" /><br/>
-                                <h4>Django</h4>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <i className="devicon-nodejs-plain" /><br/>
-                                <h4>Node</h4>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <i className="devicon-meteor-plain" /><br/>
-                                <h4>Meteor</h4>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <i className="devicon-react-original" /><br/>
-                                <h4>React</h4>
-                            </Grid.Column>
-                        </Grid.Row>
-                    </Grid>
-                    <br/>
-                    <h1>Software Engineering</h1>
-                    <Grid padded columns={2}>
-                        <Grid.Row>
-                            <Grid.Column>
-                                <i className="devicon-python-plain" /><br/>
-                                <h4>Python</h4>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <i className="devicon-java-plain" /><br/>
-                                <h4>Java</h4>
-                            </Grid.Column>
-                        </Grid.Row>
-                    </Grid>
-                </div>
+                <Segment.Group id="portrait-segments" inverted padded horizontal>
+                    <Segment id="portrait-landing" />
+                    <Segment padded inverted>
+                        <div id="portrait-info">
+                            <h1 id="portrait-name">Jonathan Zhou</h1>
+                            <h3>Software Engineer, Web Developer, Musician, Creator</h3>
+                            <h4>Based in NYC, Jon does his best to create things that do good (and do well!)</h4>
+                        </div>
+                    </Segment>
+                </Segment.Group>
+
+                <Technologies detailed />
+                <Portfolio />
+                <Resume />
+                <Contact />
             </div>
         )
     }

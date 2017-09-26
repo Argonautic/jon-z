@@ -1,0 +1,21 @@
+#portrait-segments {
+    left: 0;
+    background-color: #1b1c1d;
+}
+
+#portrait-landing {
+    left: 0;
+	height: 95vh;
+    max-width: 700px;
+	width: 100vw;
+	background-image: url("../../../assets/images/Friendly.jpg");
+	background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center;
+	border-radius: 0;
+}
+
+#portrait-name {
+    margin-top: 100px;
+    font-size: 50px;
+}

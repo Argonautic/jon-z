@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../../../assets/style/Content/lowball.css';
+import '../../../assets/style/content/lowball.css';
 
 export default class Lowball extends Component {
     render() {

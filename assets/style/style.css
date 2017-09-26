@@ -1,4 +1,5 @@
 body {
+	top: 0;
 	font-family: 'Open Sans', serif;
 	text-align: center;
 	margin: auto;
@@ -16,4 +17,8 @@ h6 {
 
 .header-margin {
 	margin-top: 47px;
+}
+
+.section-margin {
+	margin-top: 30px;
 }

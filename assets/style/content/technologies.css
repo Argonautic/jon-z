@@ -1,0 +1,11 @@
+i {
+    font-size: 90px;
+}
+
+i:hover {
+    cursor: inherit;
+}
+
+#more-details {
+    margin-top: 20px;
+}
