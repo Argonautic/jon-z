@@ -11,7 +11,7 @@ import '../../../assets/style/content/default.css';
 export default class Default extends Component {
     render() {
         return (
-            <div className="header-margin">
+            <div>
                 <Segment id="landing" inverted padded>
                     <h1 id="name">Jonathan Zhou</h1>
                     <h3>Software Engineer & Web Developer</h3>

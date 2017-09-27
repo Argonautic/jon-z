@@ -75,11 +75,11 @@ export default class Header extends Component {
         return (
             <Menu id="header" borderless widths="8" fixed="top">
                 <Menu.Item onClick={this.less}>
-                    Fewer Deets
+                    Fewer Details
                 </Menu.Item>
                 {this.renderCircles()}
                 <Menu.Item onClick={this.more}>
-                    More Deets
+                    More Details
                 </Menu.Item>
             </Menu>
         );

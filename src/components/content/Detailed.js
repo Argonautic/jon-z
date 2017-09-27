@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment } from 'semantic-ui-react';
+import { Segment, Grid } from 'semantic-ui-react';
 
 import Technologies from './Sub/Technologies'
 import PortfolioDetailed from './Sub/PortfolioDetailed';
@@ -12,17 +12,15 @@ import '../../../assets/style/content/detailed.css';
 export default class Detailed extends Component {
     render() {
         return (
-            <div className="header-margin">
-                <Segment.Group id="portrait-segments" inverted padded horizontal>
-                    <Segment id="portrait-landing" />
-                    <Segment padded inverted>
-                        <div id="portrait-info">
-                            <h1 id="portrait-name">Jonathan Zhou</h1>
-                            <h3>Software Engineer, Web Developer, Musician, Creator</h3>
-                            <h4>Based in NYC, Jon does his best to create things that do good (and do well!)</h4>
-                        </div>
-                    </Segment>
-                </Segment.Group>
+            <div>
+                <div>
+                    <div id="portrait-landing" />
+                    <div id="portrait-info">
+                        <h1 id="portrait-name">Jonathan Zhou</h1>
+                        <h3>Software Engineer, Web Developer, Musician, and Creator who does his best to
+                         do good (and do well!)</h3>
+                    </div>
+                </div>
 
                 <Technologies detailed />
                 <PortfolioDetailed />

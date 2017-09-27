@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from 'semantic-ui-react';
+import { Container, Icon } from 'semantic-ui-react';
 
 import '../../../assets/style/content/brief.css';
 
@@ -13,8 +13,10 @@ export default class Brief extends Component {
                     engineering. You can <a href="assets/Resume.pdf">Download my Resume Here </a>
                     and check out <a href="http://officialunderblue.com">A Website I Made Here. </a><br/><br/>
                     If you have any questions, or have need of my tech services, feel free to contact me at
-                    jonathan.zhou93@gmail.com.
+                    jonathan.zhou93@gmail.com, or check out my <a href="https://www.linkedin.com/in/jonzhou1/">
+                    LinkedIn.</a>
                 </h2>
+                <Icon name="computer" size="huge" />
             </Container>
         )
     }

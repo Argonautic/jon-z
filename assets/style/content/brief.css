@@ -1,4 +1,8 @@
 #brief {
-    margin-top: 30vh;
+    margin-top: 25vh;
     left: 50%;
+}
+
+#brief a {
+    color: cornflowerblue;
 }

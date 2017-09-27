@@ -33,7 +33,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className="header-margin">
                 {this.renderContent()}
             </div>
         )

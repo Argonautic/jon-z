@@ -9,3 +9,9 @@ i:hover {
 #more-details {
     margin-top: 20px;
 }
+
+@media screen and (max-width: 550px) {
+    i {
+        font-size: 60px;
+    }
+}

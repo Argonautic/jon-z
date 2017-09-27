@@ -1,9 +1,9 @@
+html,
 body {
-	top: 0;
 	font-family: 'Open Sans', serif;
 	text-align: center;
 	margin: auto;
-	background-color: #F7F7F7;
+	background-color: #F7F7F7 !important;
 }
 
 h1,
@@ -25,4 +25,14 @@ h6 {
 
 .section-divider {
 	margin-bottom: 40px !important;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+    background-color: #545454;
 }
