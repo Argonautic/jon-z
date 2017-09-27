@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Divider, Image, Container, Modal } from 'semantic-ui-react';
 
 import ResumeSrc from '../../../../assets/images/Resume.jpg';
+import ResumeLink from '../../../../assets/Resume.pdf';
 import '../../../../assets/style/content/resume.css';
 
 export default class Resume extends Component {
@@ -17,7 +18,7 @@ export default class Resume extends Component {
                     </Modal>
 
                     <br/>
-                    <a href="assets/Resume.pdf"><h2>Download Resume</h2></a>
+                    <a href={ResumeLink}><h2>Download Resume</h2></a>
                     <br/>
                 </Container>
             </div>
