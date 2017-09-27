@@ -18,7 +18,7 @@ export default class Detailed extends Component {
                     <div id="portrait-info">
                         <h1 id="portrait-name">Jonathan Zhou</h1>
                         <h3>Software Engineer, Web Developer, Musician, and Creator. Does his best to
-                         make things that do good (and do well!)</h3>
+                          make things that do good (and do well!)</h3>
                     </div>
                 </div>
 
