@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Image, Divider, Container } from 'semantic-ui-react';
 
 import Underblue from '../../../../assets/images/UnderblueSite.jpg';
-import WrkBook from '../../../../assets/images/WrkBook.jpg';
+import FreeToday from '../../../../assets/images/FreeToday.jpg';
 import '../../../../assets/style/content/portfolio.css';
 
 export default class Portfolio extends Component {
@@ -11,13 +11,13 @@ export default class Portfolio extends Component {
             <div className="section-margin">
                 <Divider /><Divider className="section-divider" horizontal><h3>Portfolio</h3></Divider>
                 <Container>
-                    <h3>officialunderblue.com</h3>
-                    <Image centered size="big" src={Underblue} href="http://officialunderblue.com" />
+                    <a href="https://freetoday.herokuapp.com"><h3>freetoday.herokuapp.com</h3></a><br/>
+                    <Image centered size="big" src={FreeToday} href="https://freetoday.herokuapp.com" />
                 </Container>
                 <Divider hidden />
                 <Container>
-                    <h3>wrkbook.com (contributor)</h3>
-                    <Image centered size="big" src={WrkBook} href="http://wrkbook.com" />
+                    <a href="http://officialunderblue.com"><h3>officialunderblue.com</h3></a><br/>
+                    <Image centered size="big" src={Underblue} href="http://officialunderblue.com" />
                 </Container>
             </div>
         )

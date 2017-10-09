@@ -1,6 +1,7 @@
 html,
 body {
 	font-family: 'Open Sans', serif;
+	font-weight: normal;
 	text-align: center;
 	margin: auto;
 	background-color: #F7F7F7 !important;
