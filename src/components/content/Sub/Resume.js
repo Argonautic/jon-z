@@ -18,7 +18,7 @@ export default class Resume extends Component {
                     </Modal>
 
                     <br/>
-                    <a href={ResumeLink}><h2>Download Resume</h2></a>
+                    <a target="_blank" href={ResumeLink}><h2>Download Resume</h2></a>
                     <br/>
                 </Container>
             </div>

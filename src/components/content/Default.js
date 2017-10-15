@@ -14,7 +14,7 @@ export default class Default extends Component {
             <div>
                 <Segment id="landing" inverted padded>
                     <h1 id="name">Jonathan Zhou</h1>
-                    <h3>Software Engineer & Web Developer</h3>
+                    <h3>Web Developer & Software Engineer</h3>
                 </Segment>
 
                 <Technologies />

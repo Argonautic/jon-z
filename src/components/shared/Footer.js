@@ -8,20 +8,14 @@ export default class Footer extends Component {
         return (
             <div>
                 <Menu id="footer" fixed="bottom" compact secondary>
-                    <Menu.Item href="https://github.com/Argonautic">
-
-                            <Icon name="github" size="large" />
-
+                    <Menu.Item target="_blank" href="https://github.com/Argonautic">
+                        <Icon name="github" size="large" />
                     </Menu.Item>
-                    <Menu.Item href="https://www.linkedin.com/in/jonzhou1/">
-
-                            <Icon name="linkedin square" link size="large" />
-
+                    <Menu.Item target="_blank" href="https://www.linkedin.com/in/jonzhou1/">
+                        <Icon name="linkedin square" link size="large" />
                     </Menu.Item>
                     <Menu.Item href="mailto:jonathan.zhou93@gmail.com">
-
-                            <Icon name="mail" link size="large" />
-
+                        <Icon name="mail" link size="large" />
                     </Menu.Item>
                 </Menu>
             </div>

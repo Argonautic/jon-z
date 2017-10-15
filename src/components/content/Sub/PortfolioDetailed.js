@@ -13,12 +13,13 @@ export default class PortfolioDetailed extends Component {
                 <Grid stackable>
                     <Grid.Row columns={1}>
                         <Grid.Column>
-                            <a href="https://freetoday.herokuapp.com"><h3>freetoday.herokuapp.com</h3></a><br/>
+                            <a target="_blank" href="https://freetoday.herokuapp.com"><h3>freetoday.herokuapp.com</h3></a><br/>
+                            <a target="_blank" href="http://github.com/Argonautic/FreeTodayMeteor"><h5 className="repo-link">Github Repo</h5></a>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2}>
                         <Grid.Column>
-                            <Image size="big" src={FreeToday} href="https://freetoday.herokuapp.com" />
+                            <Image size="big" src={FreeToday} target="_blank" href="https://freetoday.herokuapp.com" />
                         </Grid.Column>
                         <Grid.Column verticalAlign="middle">
                             <h3>Find out what's going on in your neighborhood! Exercise in Full-stack
@@ -31,12 +32,13 @@ export default class PortfolioDetailed extends Component {
                 <Grid stackable>
                     <Grid.Row columns={1}>
                         <Grid.Column>
-                            <a href="http://officialunderblue.com"><h3>officialunderblue.com</h3></a><br/>
+                            <a target="_blank" href="http://officialunderblue.com"><h3>officialunderblue.com</h3></a><br/>
+                            <a target="_blank" href="http://github.com/Argonautic/OfficialUnderblue"><h5>Github Repo</h5></a>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2}>
                         <Grid.Column>
-                            <Image size="big" src={Underblue} href="http://officialunderblue.com" />
+                            <Image size="big" src={Underblue} target="_blank" href="http://officialunderblue.com" />
                         </Grid.Column>
                         <Grid.Column verticalAlign="middle">
                             <h3>officialunderblue.com is the (aptly named) official website of the NYC indie rock band

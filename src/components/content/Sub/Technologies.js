@@ -4,6 +4,7 @@ import { Grid, List, Image } from 'semantic-ui-react';
 import ReduxImage from '../../../../assets/icons/reduxImage.png';
 import WebpackImage from '../../../../assets/icons/webpackImage.png';
 import jQueryImage from '../../../../assets/icons/jqueryImage.png';
+import MongoImage from '../../../../assets/icons/mongoImage.jpg';
 import SemanticImage from '../../../../assets/icons/semanticImage.png';
 import BootstrapImage from '../../../../assets/icons/bootstrapImage.png';
 import MaterializeImage from '../../../../assets/icons/materializeImage.png';
@@ -54,6 +55,7 @@ export default class Resume extends Component {
             { name: "Redux", src: ReduxImage },
             { name: "Webpack", src: WebpackImage },
             { name: "jQuery", src: jQueryImage },
+            { name: "MongoDB", src: MongoImage },
             { name: "SemanticUI", src: SemanticImage },
             { name: "Bootstrap", src: BootstrapImage },
             { name: "Materialize", src: MaterializeImage },
