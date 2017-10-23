@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Segment, Grid } from 'semantic-ui-react';
 
 import Technologies from './Sub/Technologies'
-import PortfolioDetailed from './Sub/PortfolioDetailed';
+import Portfolio from './Sub/Portfolio';
 import Resume from './Sub/Resume';
 import FAQ from './Sub/FAQ';
 import Contact from './Sub/Contact';
@@ -17,13 +17,13 @@ export default class Detailed extends Component {
                     <div id="portrait-landing" />
                     <div id="portrait-info">
                         <h1 id="portrait-name">Jonathan Zhou</h1>
-                        <h3>Web Developer, Software Engineer, Musician, and Creator. Strives to
-                          make things that do good (and do well!)</h3>
+                        <h2>Web Developer, Software Engineer, Musician, and Creator. Strives to
+                          make things that do good (and do well!)</h2>
                     </div>
                 </div>
 
                 <Technologies detailed />
-                <PortfolioDetailed />
+                <Portfolio />
                 <Resume />
                 <FAQ />
                 <Contact detailed />
