@@ -13,7 +13,7 @@ export default class Detailed extends Component {
     render() {
         return (
             <div>
-                <div>
+                <div id="detailed-intro">
                     <div id="portrait-landing" />
                     <div id="portrait-info">
                         <h1 id="portrait-name">Jonathan Zhou</h1>
