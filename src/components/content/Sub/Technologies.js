@@ -5,10 +5,10 @@ import ReduxImage from '../../../../assets/icons/reduxImage.png';
 import WebpackImage from '../../../../assets/icons/webpackImage.png';
 import jQueryImage from '../../../../assets/icons/jqueryImage.png';
 import MongoImage from '../../../../assets/icons/mongoImage.jpg';
+import PostgresImage from '../../../../assets/icons/postgresImage.png'
 import SemanticImage from '../../../../assets/icons/semanticImage.png';
 import BootstrapImage from '../../../../assets/icons/bootstrapImage.png';
 import MaterializeImage from '../../../../assets/icons/materializeImage.png';
-import PyTorchImage from '../../../../assets/icons/pytorchImage.png';
 import '../../../../assets/style/content/technologies.css';
 
 export default class Resume extends Component {
@@ -56,10 +56,10 @@ export default class Resume extends Component {
             { name: "Webpack", src: WebpackImage },
             { name: "jQuery", src: jQueryImage },
             { name: "MongoDB", src: MongoImage },
+            { name: "Postgres", src: PostgresImage },
             { name: "SemanticUI", src: SemanticImage },
             { name: "Bootstrap", src: BootstrapImage },
             { name: "Materialize", src: MaterializeImage },
-            { name: "PyTorch", src: PyTorchImage }
         ];
 
         return (
