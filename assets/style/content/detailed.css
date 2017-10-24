@@ -1,6 +1,9 @@
+#detailed-intro {
+    display: flex;
+}
+
 #portrait-landing {
-    float: left;
-	height: 95vh;
+	height: 96vh;
 	width: 60vw;
 	background-image: url("../../../assets/images/FriendlyProgressive.jpg");
 	background-size:     cover;
@@ -8,24 +11,30 @@
     background-position: center;
 }
 
+#portrait-name {
+    font-size: 70px;
+}
+
 #portrait-info {
     background-color: #1b1c1d;
-    padding-top: 13%;
-    height: 95vh;
+    height: 96vh;
+    width: 40vw;
+    padding: 15% 20px;
     color: white;
 }
 
-#portrait-name {
-    font-size: 50px;
-}
-
 @media screen and (max-width: 760px) {
+    #detailed-intro {
+        flex-direction: column;
+    }
+
     #portrait-landing {
         width: 100vw;
     }
 
     #portrait-info {
         height: auto;
+        width: 100vw;
     }
 
     #portrait-info h3 {

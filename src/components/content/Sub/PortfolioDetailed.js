@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Image, Divider, Container, Segment, Grid } from 'semantic-ui-react';
 
 import Underblue from '../../../../assets/images/UnderblueSite.jpg';
-import FreeToday from '../../../../assets/images/FreeToday.jpg';
-import '../../../../assets/style/content/portfolio.css';
+import FreeToday from '../../../../assets/images/FreeToday.png'
 
 export default class PortfolioDetailed extends Component {
     render() {
