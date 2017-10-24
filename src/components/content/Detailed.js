@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Segment, Grid } from 'semantic-ui-react';
 
 import Technologies from './Sub/Technologies'
 import Portfolio from './Sub/Portfolio';
@@ -8,6 +7,7 @@ import FAQ from './Sub/FAQ';
 import Contact from './Sub/Contact';
 
 import '../../../assets/style/content/detailed.css';
+import Recommendations from "./Sub/Recommendations";
 
 export default class Detailed extends Component {
     render() {
@@ -25,6 +25,7 @@ export default class Detailed extends Component {
                 <Technologies detailed />
                 <Portfolio />
                 <Resume />
+                <Recommendations />
                 <FAQ />
                 <Contact detailed />
             </div>

@@ -1,0 +1,10 @@
+.description p {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+.card {
+    width: 350px !important;
+    text-align: left;
+}
