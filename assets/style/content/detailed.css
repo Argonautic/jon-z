@@ -19,7 +19,7 @@
     background-color: #1b1c1d;
     height: 96vh;
     width: 40vw;
-    padding: 15% 20px;
+    padding: 12vh 20px;
     color: white;
 }
 
@@ -34,6 +34,7 @@
 
     #portrait-info {
         height: auto;
+        padding: 20px;
         width: 100vw;
     }
 
