@@ -10,7 +10,7 @@ export default class Brief extends Component {
         return (
             <Container id="brief">
                 <h2>
-                    Hello! My name is Jon. I'm a Web Developer and Software Engineer.<br/><br/>
+                    Hello! My name is Jon. I'm a Software Engineer and Web Developer.<br/><br/>
                     I primarily provide full stack web development (especially w/ React) and Python
                     engineering. You can <a target="_blank" href={ResumeLink}>Download my Resume Here </a>
                     and check out <a target="_blank" href="http://officialunderblue.com">A Website I Made Here. </a><br/><br/>
