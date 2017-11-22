@@ -3,9 +3,10 @@ import { Divider, Container } from 'semantic-ui-react';
 
 import PortfolioItem from './PortfolioItem';
 
-import { freeTodayDesc, officialUnderblueDesc } from '../../../../assets/text/PortfolioText';
+import { freeTodayDesc, officialUnderblueDesc, rotoprosDesc } from '../../../../assets/text/PortfolioText';
 import Underblue from '../../../../assets/images/UnderblueSite.jpg';
 import FreeToday from '../../../../assets/images/FreeToday.png';
+import Rotopros from '../../../../assets/images/Rotopros.png';
 import '../../../../assets/style/content/portfolio.css';
 
 export default class Portfolio extends Component {
@@ -24,6 +25,12 @@ export default class Portfolio extends Component {
     renderPortfolioItems() {
         const portfolioItems = [
             {
+                name: 'Rotopros',
+                src: Rotopros,
+                siteHref: 'http://rotopros.com',
+                content: rotoprosDesc
+            },
+            {
                 name: 'FreeToday',
                 src: FreeToday,
                 siteHref: 'https://freetoday.herokuapp.com',
@@ -36,7 +43,7 @@ export default class Portfolio extends Component {
                 siteHref: 'http://officialunderblue.com',
                 gitHref: 'http://github.com/Argonautic/OfficialUnderblue',
                 content: officialUnderblueDesc
-            }
+            },
         ];
 
         return portfolioItems.map(item => {
