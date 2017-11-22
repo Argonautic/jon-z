@@ -9,35 +9,42 @@ import PostgresImage from '../../../../assets/icons/postgresImage.png'
 import SemanticImage from '../../../../assets/icons/semanticImage.png';
 import BootstrapImage from '../../../../assets/icons/bootstrapImage.png';
 import MaterializeImage from '../../../../assets/icons/materializeImage.png';
+import AWSImage from '../../../../assets/icons/aws.png';
 import '../../../../assets/style/content/technologies.css';
 
 export default class Resume extends Component {
     constructor(props) {
         super(props);
 
-        this.renderFirstRow = this.renderFirstRow.bind(this);
-        this.renderSecondRow = this.renderSecondRow.bind(this);
         this.renderRow = this.renderRow.bind(this);
     }
 
-    renderFirstRow() {
-        const firstRow = [
+    componentWillMount() {
+        this.firstRow = [
             { name: "Django", iconClass: "devicon-django-plain" },
-            { name: "Node", iconClass: "devicon-nodejs-plain" },
+            { name: "Express", iconClass: "devicon-express-original-wordmark"},
             { name: "Meteor", iconClass: "devicon-meteor-plain" },
             { name: "React", iconClass: "devicon-react-original" },
+            { name: "Angular", iconClass: "devicon-angularjs-plain" }
         ];
 
-        return this.renderRow(firstRow)
-    }
-
-    renderSecondRow() {
-        const secondRow = [
+        this.secondRow = [
             { name: "Python", iconClass: "devicon-python-plain" },
+            { name: "Node", iconClass: "devicon-nodejs-plain" },
             { name: "Java", iconClass: "devicon-java-plain" },
         ];
 
-        return this.renderRow(secondRow)
+        this.icons = [
+            { name: "Redux", src: ReduxImage },
+            { name: "Webpack", src: WebpackImage },
+            { name: "jQuery", src: jQueryImage },
+            { name: "MongoDB", src: MongoImage },
+            { name: "Postgres", src: PostgresImage },
+            { name: "SemanticUI", src: SemanticImage },
+            { name: "Bootstrap", src: BootstrapImage },
+            { name: "Materialize", src: MaterializeImage },
+            { name: "AWS", src: AWSImage }
+        ];
     }
 
     renderRow(row) {
@@ -51,22 +58,11 @@ export default class Resume extends Component {
     }
 
     renderMoreDetails() {
-        const icons = [
-            { name: "Redux", src: ReduxImage },
-            { name: "Webpack", src: WebpackImage },
-            { name: "jQuery", src: jQueryImage },
-            { name: "MongoDB", src: MongoImage },
-            { name: "Postgres", src: PostgresImage },
-            { name: "SemanticUI", src: SemanticImage },
-            { name: "Bootstrap", src: BootstrapImage },
-            { name: "Materialize", src: MaterializeImage },
-        ];
-
         return (
             <div id="more-details">
                 <h3>Other Technologies</h3>
                 <List horizontal>
-                {icons.map(icon => {
+                {this.icons.map(icon => {
                     return <List.Item key={icon.name}>
                         <Image src={icon.src} height="40" width="40" />
                         <List.Content>
@@ -82,16 +78,16 @@ export default class Resume extends Component {
         return (
             <div className="section-margin">
                 <h1>Web Development</h1>
-                <Grid padded columns={4}>
+                <Grid padded columns={this.firstRow.length}>
                     <Grid.Row>
-                        {this.renderFirstRow()}
+                        {this.renderRow(this.firstRow)}
                     </Grid.Row>
                 </Grid>
                 <br/>
                 <h1>Software Engineering</h1>
-                <Grid padded columns={2}>
+                <Grid padded columns={this.secondRow.length}>
                     <Grid.Row>
-                        {this.renderSecondRow()}
+                        {this.renderRow(this.secondRow)}
                     </Grid.Row>
                 </Grid>
 

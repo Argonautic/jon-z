@@ -23,7 +23,9 @@ export default class Portfolio extends Component {
                 <p>{this.props.content}</p>
                 <Button.Group>
                     <Button primary content="See Website" target="_blank" href={this.props.siteHref} />
-                    <Button color="teal" content="See Git Repo" target="_blank" href={this.props.gitHref} />
+                    {this.props.gitHref &&
+                        <Button color="teal" content="See Git Repo" target="_blank" href={this.props.gitHref} />
+                    }
                 </Button.Group>
             </div>
     }
