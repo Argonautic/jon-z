@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment, Grid, Icon, Divider } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 
 import Technologies from './contentComponents/Technologies';
 import Portfolio from './contentComponents/Portfolio';

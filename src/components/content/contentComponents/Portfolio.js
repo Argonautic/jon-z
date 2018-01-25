@@ -3,10 +3,11 @@ import { Divider, Container } from 'semantic-ui-react';
 
 import PortfolioItem from './PortfolioItem';
 
-import { freeTodayDesc, officialUnderblueDesc, rotoprosDesc } from '../../../../assets/text/PortfolioText';
+import { freeTodayDesc, officialUnderblueDesc, rotoprosDesc, geopipeDesc } from '../../../../assets/text/PortfolioText';
 import Underblue from '../../../../assets/images/UnderblueSite.jpg';
 import FreeToday from '../../../../assets/images/FreeToday.png';
 import Rotopros from '../../../../assets/images/Rotopros.png';
+import Geopipe from '../../../../assets/images/Geopipe.png';
 import '../../../../assets/style/content/portfolio.css';
 
 export default class Portfolio extends Component {
@@ -14,7 +15,7 @@ export default class Portfolio extends Component {
         super(props);
 
         this.state = {
-            active: ''
+            activeItem: ''
         };
 
         this.renderPortfolioItems = this.renderPortfolioItems.bind(this);
@@ -25,25 +26,31 @@ export default class Portfolio extends Component {
     renderPortfolioItems() {
         const portfolioItems = [
             {
+                name: 'Geopipe',
+                src: Geopipe,
+                siteHref: 'http://geopi.pe',
+                contentText: geopipeDesc
+            },
+            {
                 name: 'Rotopros',
                 src: Rotopros,
                 siteHref: 'http://rotopros.com',
-                content: rotoprosDesc
+                contentText: rotoprosDesc
             },
             {
                 name: 'FreeToday',
                 src: FreeToday,
                 siteHref: 'https://freetoday.herokuapp.com',
                 gitHref: 'http://github.com/Argonautic/FreeTodayMeteor',
-                content: freeTodayDesc
+                contentText: freeTodayDesc
             },
             {
                 name: 'OfficialUnderblue',
                 src: Underblue,
                 siteHref: 'http://officialunderblue.com',
                 gitHref: 'http://github.com/Argonautic/OfficialUnderblue',
-                content: officialUnderblueDesc
-            },
+                contentText: officialUnderblueDesc
+            }
         ];
 
         return portfolioItems.map(item => {
@@ -54,8 +61,8 @@ export default class Portfolio extends Component {
                     src={item.src}
                     siteHref={item.siteHref}
                     gitHref={item.gitHref}
-                    content={item.content}
-                    active={this.state.active === item.name}
+                    contentText={item.contentText}
+                    active={this.state.activeItem === item.name}
 
                     handleMouseEnter={this.setActiveItem}
                     handleMouseLeave={this.unsetActiveItem}
@@ -66,11 +73,11 @@ export default class Portfolio extends Component {
     }
 
     setActiveItem(newActive) {
-        this.setState({ active: newActive });
+        this.setState({ activeItem: newActive });
     }
 
     unsetActiveItem() {
-        this.setState({ active: '' });
+        this.setState({ activeItem: '' });
     }
 
     render() {

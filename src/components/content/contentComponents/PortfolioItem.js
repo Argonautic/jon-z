@@ -20,7 +20,7 @@ export default class Portfolio extends Component {
 
     renderContent() {
         return <div id="content">
-                <p>{this.props.content}</p>
+                <p>{this.props.contentText}</p>
                 <Button.Group>
                     <Button primary content="See Website" target="_blank" href={this.props.siteHref} />
                     {this.props.gitHref &&

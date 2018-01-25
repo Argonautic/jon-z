@@ -31,7 +31,8 @@ export default class Resume extends Component {
         this.secondRow = [
             { name: "Python", iconClass: "devicon-python-plain" },
             { name: "Node", iconClass: "devicon-nodejs-plain" },
-            { name: "Java", iconClass: "devicon-java-plain" },
+            { name: "PHP", iconClass: "devicon-php-plain"},
+            { name: "Java", iconClass: "devicon-java-plain" }
         ];
 
         this.icons = [
